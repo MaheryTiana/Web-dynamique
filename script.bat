@@ -1,7 +1,7 @@
 cd Framework/src
 javac -d . annotation/*.java
-javac -d . etu1881/framework/*.java
-javac -d . etu1881/framework/servlet/*.java
+javac -d . etu1869/framework/*.java
+javac -d . etu1869/framework/servlet/*.java
 javac -d . helper_classes/*.java
 cd ../../
 jar cvf Framework.jar  -C Framework/src/ .
@@ -13,6 +13,6 @@ javac -cp "../lib/Framework.jar" -d . model/*.java
 cd ../../../
 
 cd "Test framework"
-jar cvf TestFramework.war "WEB-INF"
-copy "TestFramework.war" "C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps"
+jar cvf TestFramework.war *
+copy "TestFramework.war" "C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps"
 cd ../

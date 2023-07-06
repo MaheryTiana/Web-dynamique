@@ -1,4 +1,4 @@
-package etu1881.framework;
+package etu1869.framework;
 
 /**
  * Mapping
